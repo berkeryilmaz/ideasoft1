@@ -1,0 +1,2677 @@
+{
+	"info": {
+		"_postman_id": "f03150ff-8862-44d7-8567-b144c8dbfb8b",
+		"name": "ideaSoft Case",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7011103"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"item": [
+				{
+					"name": "Register",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Test\",\n    \"email\": \"test.user@example.com\",\n    \"password\": \"12345678\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/register",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Test\",\n    \"email\": \"test.user@example.com\",\n    \"password\": \"12345678\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "ideasoft1.test/api/register",
+									"host": [
+										"ideasoft1",
+										"test"
+									],
+									"path": [
+										"api",
+										"register"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.23.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.5"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Jan 2025 09:15:58 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User Created \"\n}"
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"test.user@example.com\",\n    \"password\": \"12345678\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/login",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"test.user@example.com\",\n    \"password\": \"12345678\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "ideasoft1.test/api/login",
+									"host": [
+										"ideasoft1",
+										"test"
+									],
+									"path": [
+										"api",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.23.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.5"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Jan 2025 09:16:19 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"access_token\": \"5|G3BneIUA8qw58qG8hVBp5KMXdk2dChQfGifAoY5j07a4b7ae\"\n}"
+						}
+					]
+				},
+				{
+					"name": "user",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/user",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "user",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "ideasoft1.test/api/user",
+									"host": [
+										"ideasoft1",
+										"test"
+									],
+									"path": [
+										"api",
+										"user"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.23.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.5"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Jan 2025 09:17:05 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 3,\n    \"name\": \"Test\",\n    \"email\": \"test.user@example.com\",\n    \"email_verified_at\": null,\n    \"created_at\": \"2025-01-29T09:15:58.000000Z\",\n    \"updated_at\": \"2025-01-29T09:15:58.000000Z\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "customers",
+			"item": [
+				{
+					"name": "customers",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"İsa Sonuyumaz Test\",\n    \"since\": \"2016-02-11\",\n    \"revenue\": \"0.00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/customers",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"customers"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "customers",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"İsa Sonuyumaz Test\",\n    \"since\": \"2016-02-11\",\n    \"revenue\": \"0.00\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "ideasoft1.test/api/customers",
+									"host": [
+										"ideasoft1",
+										"test"
+									],
+									"path": [
+										"api",
+										"customers"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.23.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.5"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Jan 2025 09:18:11 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"İsa Sonuyumaz Test\",\n    \"since\": \"2016-02-11\",\n    \"revenue\": \"0.00\",\n    \"updated_at\": \"2025-01-29T09:18:11.000000Z\",\n    \"created_at\": \"2025-01-29T09:18:11.000000Z\",\n    \"id\": 5\n}"
+						}
+					]
+				},
+				{
+					"name": "customers",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"İsa Sonuyumaz 1234\",\n    \"since\": \"2016-02-11\",\n    \"revenue\": \"0.00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/customers/5",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"customers",
+								"5"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "customers",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"İsa Sonuyumaz 1234\",\n    \"since\": \"2016-02-11\",\n    \"revenue\": \"0.00\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "ideasoft1.test/api/customers/5",
+									"host": [
+										"ideasoft1",
+										"test"
+									],
+									"path": [
+										"api",
+										"customers",
+										"5"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.23.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.5"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Jan 2025 09:19:02 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 5,\n    \"name\": \"İsa Sonuyumaz 1234\",\n    \"since\": \"2016-02-11\",\n    \"revenue\": \"0.00\",\n    \"created_at\": \"2025-01-29T09:18:11.000000Z\",\n    \"updated_at\": \"2025-01-29T09:19:02.000000Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "customers",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/customers/5",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"customers",
+								"5"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "customers",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "ideasoft1.test/api/customers/5",
+									"host": [
+										"ideasoft1",
+										"test"
+									],
+									"path": [
+										"api",
+										"customers",
+										"5"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.23.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.5"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Jan 2025 09:19:25 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "true"
+						}
+					]
+				},
+				{
+					"name": "customers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/customers/3",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"customers",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "customers",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "ideasoft1.test/api/customers/3",
+									"host": [
+										"ideasoft1",
+										"test"
+									],
+									"path": [
+										"api",
+										"customers",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.23.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.5"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Jan 2025 09:19:45 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 3,\n    \"name\": \"İsa Sonuyumaz\",\n    \"since\": \"2016-02-11\",\n    \"revenue\": 0,\n    \"created_at\": \"2025-01-28T23:31:50.000000Z\",\n    \"updated_at\": \"2025-01-28T23:31:50.000000Z\",\n    \"orders\": [\n        {\n            \"id\": 3,\n            \"customer_id\": 3,\n            \"total\": 1275.18,\n            \"created_at\": \"2025-01-29T00:45:04.000000Z\",\n            \"updated_at\": \"2025-01-29T00:45:04.000000Z\"\n        },\n        {\n            \"id\": 9,\n            \"customer_id\": 3,\n            \"total\": 67.68,\n            \"created_at\": \"2025-01-29T01:14:44.000000Z\",\n            \"updated_at\": \"2025-01-29T01:14:44.000000Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "customers (all)",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/customers",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"customers"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "customers (all)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "ideasoft1.test/api/customers",
+									"host": [
+										"ideasoft1",
+										"test"
+									],
+									"path": [
+										"api",
+										"customers"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.23.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.5"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Jan 2025 09:20:26 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Türker Jöntürk\",\n        \"since\": \"2014-06-28\",\n        \"revenue\": 492.12,\n        \"created_at\": \"2025-01-28T23:31:08.000000Z\",\n        \"updated_at\": \"2025-01-28T23:31:08.000000Z\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Kaptan Devopuz\",\n        \"since\": \"2015-01-15\",\n        \"revenue\": 1505.95,\n        \"created_at\": \"2025-01-28T23:31:34.000000Z\",\n        \"updated_at\": \"2025-01-28T23:31:34.000000Z\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"İsa Sonuyumaz\",\n        \"since\": \"2016-02-11\",\n        \"revenue\": 0,\n        \"created_at\": \"2025-01-28T23:31:50.000000Z\",\n        \"updated_at\": \"2025-01-28T23:31:50.000000Z\"\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "productCategories",
+			"item": [
+				{
+					"name": "productCategories",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"categoryName\": \"Elektrik & Aydınlatma Test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/productCategories",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"productCategories"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "productCategories",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"categoryName\": \"Elektrik & Aydınlatma Test\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "ideasoft1.test/api/productCategories",
+									"host": [
+										"ideasoft1",
+										"test"
+									],
+									"path": [
+										"api",
+										"productCategories"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.23.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.5"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Jan 2025 09:21:14 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"categoryName\": \"Elektrik & Aydınlatma Test\",\n    \"updated_at\": \"2025-01-29T09:21:14.000000Z\",\n    \"created_at\": \"2025-01-29T09:21:14.000000Z\",\n    \"id\": 4\n}"
+						}
+					]
+				},
+				{
+					"name": "productCategories",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"categoryName\": \"Elektrik & Aydınlatma Update\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/productCategories/4",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"productCategories",
+								"4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "productCategories",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"categoryName\": \"Elektrik & Aydınlatma Update\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "ideasoft1.test/api/productCategories/4",
+									"host": [
+										"ideasoft1",
+										"test"
+									],
+									"path": [
+										"api",
+										"productCategories",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.23.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.5"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Jan 2025 09:22:04 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 4,\n    \"categoryName\": \"Elektrik & Aydınlatma Update\",\n    \"created_at\": \"2025-01-29T09:21:14.000000Z\",\n    \"updated_at\": \"2025-01-29T09:22:04.000000Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "productCategories",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/productCategories/4",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"productCategories",
+								"4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "productCategories",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "ideasoft1.test/api/productCategories/4",
+									"host": [
+										"ideasoft1",
+										"test"
+									],
+									"path": [
+										"api",
+										"productCategories",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.23.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.5"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Jan 2025 09:22:40 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "true"
+						}
+					]
+				},
+				{
+					"name": "productCategories(all)",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/productCategories",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"productCategories"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "productCategories(all)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "ideasoft1.test/api/productCategories",
+									"host": [
+										"ideasoft1",
+										"test"
+									],
+									"path": [
+										"api",
+										"productCategories"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.23.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.5"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Jan 2025 09:23:00 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"categoryName\": \"Hırdavat\",\n        \"created_at\": \"2025-01-28T23:37:05.000000Z\",\n        \"updated_at\": \"2025-01-28T23:37:05.000000Z\"\n    },\n    {\n        \"id\": 2,\n        \"categoryName\": \"Elektrik & Aydınlatma\",\n        \"created_at\": \"2025-01-28T23:37:29.000000Z\",\n        \"updated_at\": \"2025-01-28T23:37:29.000000Z\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "productCategories",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/productCategories/2",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"productCategories",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "productCategories",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "ideasoft1.test/api/productCategories/2",
+									"host": [
+										"ideasoft1",
+										"test"
+									],
+									"path": [
+										"api",
+										"productCategories",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.23.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.5"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Jan 2025 09:23:24 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"categoryName\": \"Elektrik & Aydınlatma\",\n    \"created_at\": \"2025-01-28T23:37:29.000000Z\",\n    \"updated_at\": \"2025-01-28T23:37:29.000000Z\",\n    \"products\": [\n        {\n            \"id\": 102,\n            \"name\": \"Viko Karre Anahtar - Beyaz\",\n            \"price\": 11.28,\n            \"stock\": 4,\n            \"category_id\": 2,\n            \"created_at\": \"2025-01-28T23:49:12.000000Z\",\n            \"updated_at\": \"2025-01-29T01:14:44.000000Z\"\n        },\n        {\n            \"id\": 103,\n            \"name\": \"Legrand Salbei Anahtar, Alüminyum\",\n            \"price\": 22.8,\n            \"stock\": 10,\n            \"category_id\": 2,\n            \"created_at\": \"2025-01-28T23:49:45.000000Z\",\n            \"updated_at\": \"2025-01-28T23:49:45.000000Z\"\n        },\n        {\n            \"id\": 104,\n            \"name\": \"Schneider Asfora Beyaz Komütatör\",\n            \"price\": 12.95,\n            \"stock\": 10,\n            \"category_id\": 2,\n            \"created_at\": \"2025-01-28T23:50:58.000000Z\",\n            \"updated_at\": \"2025-01-28T23:50:58.000000Z\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "products",
+			"item": [
+				{
+					"name": "products",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Schneider Asfora Beyaz Komütatör test\",\n    \"category_id\": \"2\",\n    \"price\": \"12.95\",\n    \"stock\": \"10\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/products",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "products",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Schneider Asfora Beyaz Komütatör test\",\n    \"category_id\": \"2\",\n    \"price\": \"12.95\",\n    \"stock\": \"10\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "ideasoft1.test/api/products",
+									"host": [
+										"ideasoft1",
+										"test"
+									],
+									"path": [
+										"api",
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.23.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.5"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Jan 2025 09:24:19 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"Schneider Asfora Beyaz Komütatör test\",\n    \"price\": \"12.95\",\n    \"stock\": \"10\",\n    \"category_id\": \"2\",\n    \"updated_at\": \"2025-01-29T09:24:19.000000Z\",\n    \"created_at\": \"2025-01-29T09:24:19.000000Z\",\n    \"id\": 106\n}"
+						}
+					]
+				},
+				{
+					"name": "products",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Schneider Asfora Beyaz Komütatör 12345\",\n    \"category_id\": \"2\",\n    \"price\": \"12.95\",\n    \"stock\": \"10\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/products/106",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"products",
+								"106"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "products",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Schneider Asfora Beyaz Komütatör 12345\",\n    \"category_id\": \"2\",\n    \"price\": \"12.95\",\n    \"stock\": \"10\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "ideasoft1.test/api/products/106",
+									"host": [
+										"ideasoft1",
+										"test"
+									],
+									"path": [
+										"api",
+										"products",
+										"106"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.23.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.5"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Jan 2025 09:25:12 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 106,\n    \"name\": \"Schneider Asfora Beyaz Komütatör 12345\",\n    \"price\": \"12.95\",\n    \"stock\": \"10\",\n    \"category_id\": \"2\",\n    \"created_at\": \"2025-01-29T09:24:19.000000Z\",\n    \"updated_at\": \"2025-01-29T09:25:12.000000Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "products",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/products/106",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"products",
+								"106"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "products",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/products/106",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"products",
+										"106"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.23.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.5"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Jan 2025 09:25:30 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "true"
+						}
+					]
+				},
+				{
+					"name": "products(all)",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/products",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "products(all)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/products",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.23.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.5"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Jan 2025 09:26:18 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 100,\n        \"name\": \"Black&Decker A7062 40 Parça Cırcırlı Tornavida Seti\",\n        \"price\": 120.75,\n        \"stock\": 10,\n        \"category_id\": 1,\n        \"created_at\": \"2025-01-28T23:47:41.000000Z\",\n        \"updated_at\": \"2025-01-28T23:47:41.000000Z\"\n    },\n    {\n        \"id\": 101,\n        \"name\": \"Reko Mini Tamir Hassas Tornavida Seti 32'li\",\n        \"price\": 49.5,\n        \"stock\": 10,\n        \"category_id\": 1,\n        \"created_at\": \"2025-01-28T23:48:41.000000Z\",\n        \"updated_at\": \"2025-01-28T23:48:41.000000Z\"\n    },\n    {\n        \"id\": 102,\n        \"name\": \"Viko Karre Anahtar - Beyaz\",\n        \"price\": 11.28,\n        \"stock\": 4,\n        \"category_id\": 2,\n        \"created_at\": \"2025-01-28T23:49:12.000000Z\",\n        \"updated_at\": \"2025-01-29T01:14:44.000000Z\"\n    },\n    {\n        \"id\": 103,\n        \"name\": \"Legrand Salbei Anahtar, Alüminyum\",\n        \"price\": 22.8,\n        \"stock\": 10,\n        \"category_id\": 2,\n        \"created_at\": \"2025-01-28T23:49:45.000000Z\",\n        \"updated_at\": \"2025-01-28T23:49:45.000000Z\"\n    },\n    {\n        \"id\": 104,\n        \"name\": \"Schneider Asfora Beyaz Komütatör\",\n        \"price\": 12.95,\n        \"stock\": 10,\n        \"category_id\": 2,\n        \"created_at\": \"2025-01-28T23:50:58.000000Z\",\n        \"updated_at\": \"2025-01-28T23:50:58.000000Z\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "products",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/products/104",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"products",
+								"104"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "products",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/products/104",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"products",
+										"104"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.23.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.5"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Jan 2025 09:26:04 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 104,\n    \"name\": \"Schneider Asfora Beyaz Komütatör\",\n    \"price\": 12.95,\n    \"stock\": 10,\n    \"category_id\": 2,\n    \"created_at\": \"2025-01-28T23:50:58.000000Z\",\n    \"updated_at\": \"2025-01-28T23:50:58.000000Z\",\n    \"category\": {\n        \"id\": 2,\n        \"categoryName\": \"Elektrik & Aydınlatma\",\n        \"created_at\": \"2025-01-28T23:37:29.000000Z\",\n        \"updated_at\": \"2025-01-28T23:37:29.000000Z\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "orders",
+			"item": [
+				{
+					"name": "orders",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"customer_id\": 3,\n    \"items\": [\n        {\n            \"product_id\": 102,\n            \"quantity\": 6,\n            \"unitPrice\": 11.28,\n            \"total\": 67.68\n        }\n    ],\n    \"total\": 67.68\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/orders",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "orders",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"customer_id\": 3,\n    \"items\": [\n        {\n            \"product_id\": 102,\n            \"quantity\": 6,\n            \"unitPrice\": 11.28,\n            \"total\": 67.68\n        }\n    ],\n    \"total\": 67.68\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/orders",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"orders"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.23.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.5"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Jan 2025 09:28:26 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"total\": 67.68,\n    \"customer_id\": 3,\n    \"updated_at\": \"2025-01-29T09:28:26.000000Z\",\n    \"created_at\": \"2025-01-29T09:28:26.000000Z\",\n    \"id\": 10,\n    \"customer\": {\n        \"id\": 3,\n        \"name\": \"İsa Sonuyumaz\",\n        \"since\": \"2016-02-11\",\n        \"revenue\": 0,\n        \"created_at\": \"2025-01-28T23:31:50.000000Z\",\n        \"updated_at\": \"2025-01-28T23:31:50.000000Z\"\n    },\n    \"order_items\": [\n        {\n            \"id\": 12,\n            \"order_id\": 10,\n            \"product_id\": 102,\n            \"quantity\": 6,\n            \"unitPrice\": 11.28,\n            \"total\": 67.68,\n            \"created_at\": \"2025-01-29T09:28:26.000000Z\",\n            \"updated_at\": \"2025-01-29T09:28:26.000000Z\",\n            \"product\": {\n                \"id\": 102,\n                \"name\": \"Viko Karre Anahtar - Beyaz\",\n                \"price\": 11.28,\n                \"stock\": 4,\n                \"category_id\": 2,\n                \"created_at\": \"2025-01-28T23:49:12.000000Z\",\n                \"updated_at\": \"2025-01-29T09:28:26.000000Z\"\n            }\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "orders",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/orders/10",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"orders",
+								"10"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "orders",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/orders/10",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"orders",
+										"10"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.23.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.5"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Jan 2025 09:29:03 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "true"
+						}
+					]
+				},
+				{
+					"name": "orders(all)",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/orders",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "orders(all)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/orders",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"orders"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.23.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.5"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Jan 2025 09:29:20 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"customer_id\": 1,\n        \"total\": 112.8,\n        \"created_at\": \"2025-01-29T00:28:40.000000Z\",\n        \"updated_at\": \"2025-01-29T00:28:40.000000Z\",\n        \"customer\": {\n            \"id\": 1,\n            \"name\": \"Türker Jöntürk\",\n            \"since\": \"2014-06-28\",\n            \"revenue\": 492.12,\n            \"created_at\": \"2025-01-28T23:31:08.000000Z\",\n            \"updated_at\": \"2025-01-28T23:31:08.000000Z\"\n        }\n    },\n    {\n        \"id\": 2,\n        \"customer_id\": 2,\n        \"total\": 219.75,\n        \"created_at\": \"2025-01-29T00:30:19.000000Z\",\n        \"updated_at\": \"2025-01-29T00:30:19.000000Z\",\n        \"customer\": {\n            \"id\": 2,\n            \"name\": \"Kaptan Devopuz\",\n            \"since\": \"2015-01-15\",\n            \"revenue\": 1505.95,\n            \"created_at\": \"2025-01-28T23:31:34.000000Z\",\n            \"updated_at\": \"2025-01-28T23:31:34.000000Z\"\n        }\n    },\n    {\n        \"id\": 3,\n        \"customer_id\": 3,\n        \"total\": 1275.18,\n        \"created_at\": \"2025-01-29T00:45:04.000000Z\",\n        \"updated_at\": \"2025-01-29T00:45:04.000000Z\",\n        \"customer\": {\n            \"id\": 3,\n            \"name\": \"İsa Sonuyumaz\",\n            \"since\": \"2016-02-11\",\n            \"revenue\": 0,\n            \"created_at\": \"2025-01-28T23:31:50.000000Z\",\n            \"updated_at\": \"2025-01-28T23:31:50.000000Z\"\n        }\n    },\n    {\n        \"id\": 9,\n        \"customer_id\": 3,\n        \"total\": 67.68,\n        \"created_at\": \"2025-01-29T01:14:44.000000Z\",\n        \"updated_at\": \"2025-01-29T01:14:44.000000Z\",\n        \"customer\": {\n            \"id\": 3,\n            \"name\": \"İsa Sonuyumaz\",\n            \"since\": \"2016-02-11\",\n            \"revenue\": 0,\n            \"created_at\": \"2025-01-28T23:31:50.000000Z\",\n            \"updated_at\": \"2025-01-28T23:31:50.000000Z\"\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "orders",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/orders/3",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"orders",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "orders",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/orders/3",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"orders",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.23.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.5"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Jan 2025 09:29:26 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 3,\n    \"customer_id\": 3,\n    \"total\": 1275.18,\n    \"created_at\": \"2025-01-29T00:45:04.000000Z\",\n    \"updated_at\": \"2025-01-29T00:45:04.000000Z\",\n    \"customer\": {\n        \"id\": 3,\n        \"name\": \"İsa Sonuyumaz\",\n        \"since\": \"2016-02-11\",\n        \"revenue\": 0,\n        \"created_at\": \"2025-01-28T23:31:50.000000Z\",\n        \"updated_at\": \"2025-01-28T23:31:50.000000Z\"\n    },\n    \"order_items\": [\n        {\n            \"id\": 4,\n            \"order_id\": 3,\n            \"product_id\": 102,\n            \"quantity\": 6,\n            \"unitPrice\": 11.28,\n            \"total\": 67.68,\n            \"created_at\": \"2025-01-29T00:45:04.000000Z\",\n            \"updated_at\": \"2025-01-29T00:45:04.000000Z\",\n            \"product\": {\n                \"id\": 102,\n                \"name\": \"Viko Karre Anahtar - Beyaz\",\n                \"price\": 11.28,\n                \"stock\": 4,\n                \"category_id\": 2,\n                \"created_at\": \"2025-01-28T23:49:12.000000Z\",\n                \"updated_at\": \"2025-01-29T09:28:26.000000Z\"\n            }\n        },\n        {\n            \"id\": 5,\n            \"order_id\": 3,\n            \"product_id\": 100,\n            \"quantity\": 10,\n            \"unitPrice\": 120.75,\n            \"total\": 1207.5,\n            \"created_at\": \"2025-01-29T00:45:04.000000Z\",\n            \"updated_at\": \"2025-01-29T00:45:04.000000Z\",\n            \"product\": {\n                \"id\": 100,\n                \"name\": \"Black&Decker A7062 40 Parça Cırcırlı Tornavida Seti\",\n                \"price\": 120.75,\n                \"stock\": 10,\n                \"category_id\": 1,\n                \"created_at\": \"2025-01-28T23:47:41.000000Z\",\n                \"updated_at\": \"2025-01-28T23:47:41.000000Z\"\n            }\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "5|G3BneIUA8qw58qG8hVBp5KMXdk2dChQfGifAoY5j07a4b7ae",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE_URL",
+			"value": "ideasoft1.test/api",
+			"type": "string"
+		}
+	]
+}
