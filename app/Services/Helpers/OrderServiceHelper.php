@@ -26,13 +26,13 @@ class OrderServiceHelper
         return bccomp($calculatedTotal, $order['total'], 2) === 0;
     }
 
-    public static function checkTotals($data)
+    public static function checkTotals($validatedOrderData)
     {
-        if (!self::chechItemTotal($data['items'])) {
+        if (!self::chechItemTotal($validatedOrderData['items'])) {
             throw new BusinessRuleException('Sum of  each item price should be equal item total.');
         }
 
-        if (!self::chechOrderTotal($data)) {
+        if (!self::chechOrderTotal($validatedOrderData)) {
             throw new BusinessRuleException('Sum of all prices should be equal order total.');
         }
     }

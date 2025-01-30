@@ -29,8 +29,8 @@ class ProductCategoryController extends Controller
      */
     public function store(ProductCategoryRequest $request)
     {
-        $validatedData = $request->validated();
-        return response()->json($this->productCategoryService->createProductCategory($validatedData));
+        $validatedProductCategoryData = $request->validated();
+        return response()->json($this->productCategoryService->createProductCategory($validatedProductCategoryData));
     }
 
     /**

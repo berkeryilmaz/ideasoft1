@@ -6,9 +6,9 @@ use App\Models\ProductCategory;
 
 class ProductCategoryService
 {
-    public function createProductCategory($data)
+    public function createProductCategory($validatedProductCategoryData)
     {
-        return ProductCategory::create($data);
+        return ProductCategory::create($validatedProductCategoryData);
     }
 
     public function getAllProductCategories()
@@ -21,9 +21,9 @@ class ProductCategoryService
         return $productCategory->load('products');
     }
 
-    public function updateProductCategory($newProductCategory, ProductCategory $productCategory)
+    public function updateProductCategory($validatedProductCategoryData, ProductCategory $productCategory)
     {
-        $productCategory->fill($newProductCategory);
+        $productCategory->fill($validatedProductCategoryData);
         $productCategory->save();
         return $productCategory;
     }

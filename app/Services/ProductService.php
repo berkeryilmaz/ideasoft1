@@ -6,9 +6,9 @@ use App\Models\Product;
 
 class ProductService
 {
-    public function createProduct($data)
+    public function createProduct($validatedProductData)
     {
-        return Product::create($data);
+        return Product::create($validatedProductData);
     }
 
     public function getAllProducts()
@@ -21,9 +21,9 @@ class ProductService
         return $product->load('category');
     }
 
-    public function updateProduct($newProduct, Product $product)
+    public function updateProduct($validatedProductData, Product $product)
     {
-        $product->fill($newProduct);
+        $product->fill($validatedProductData);
         $product->save();
         return $product;
     }

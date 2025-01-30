@@ -29,8 +29,8 @@ class OrderController extends Controller
     public function store(OrderRequest $request)
     {
         try {
-            $validatedData = $request->validated();
-            return response()->json($this->orderService->createOrder($validatedData));
+            $validatedOrderData = $request->validated();
+            return response()->json($this->orderService->createOrder($validatedOrderData));
         } catch (\Exception $exception) {
             return response()->json([
                 'status' => false,

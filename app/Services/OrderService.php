@@ -31,22 +31,22 @@ class OrderService
         }
     }
 
-    public function createOrder($data)
+    public function createOrder($validatedOrderData)
     {
-        OrderServiceHelper::checkTotals($data);
-        OrderServiceHelper::checkProdcutStock($data['items']);
+        OrderServiceHelper::checkTotals($validatedOrderData);
+        OrderServiceHelper::checkProdcutStock($validatedOrderData['items']);
         DB::beginTransaction();
         try {
-            $order = $this->insertOrder($data);
-            $this->insertOrderItems($data['items'], $order);
-            $this->updateProductStock($data['items']);
+            $order = $this->insertOrder($validatedOrderData);
+            $this->insertOrderItems($validatedOrderData['items'], $order);
+            $this->updateProductStock($validatedOrderData['items']);
             DB::commit();
             return $order->load(['customer', 'orderItems']);
         } catch (\Exception $e) {
             DB::rollBack();
         }
 
-        throw new BusinessRuleException('An error has occurred creating order.');;
+        throw new BusinessRuleException('An error has occurred creating order.');
     }
 
     public function getAllOrders()

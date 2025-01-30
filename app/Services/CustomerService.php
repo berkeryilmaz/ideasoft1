@@ -6,9 +6,9 @@ use App\Models\Customer;
 
 class CustomerService
 {
-    public function createCustomer($data)
+    public function createCustomer($validatedCustomerData)
     {
-        return Customer::create($data);
+        return Customer::create($validatedCustomerData);
     }
 
     public function getAllCustomers()
@@ -21,9 +21,9 @@ class CustomerService
         return $customer->load('orders');
     }
 
-    public function updateCustomer($newCustomer, Customer $customer)
+    public function updateCustomer($validatedCustomerData, Customer $customer)
     {
-        $customer->fill($newCustomer);
+        $customer->fill($validatedCustomerData);
         $customer->save();
         return $customer;
     }
