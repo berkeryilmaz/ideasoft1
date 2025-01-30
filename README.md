@@ -1,3 +1,116 @@
+**ideaSoft API - Laravel v11.40.0**
+
+Aşağıda, proje yapısı ve kullanım adımları özetlenmiştir.
+
+
+
+**Proje Özeti**
+
+• **Framework:** Laravel v11.40.0
+
+• **Kimlik Doğrulama:** Laravel Sanctum
+
+• **Validasyon:** Request sınıfları (App\Http\Requests)
+
+• **İş süreçleri:** Servis katmanı (App\Services)
+
+• **Özel Hata Yönetimi:** App\Exceptions ö4nek eklenmiştir
+
+• **Harici Kütüphane:** Yok
+
+• **DB Güvenliği:** Bazı işlemler **transaction** ile korunmuştur
+
+• **Postman Koleksiyonu:** "ideaSoft Case.postman_collection.json" proje içine eklenmiştir
+
+
+
+## Kullanım
+
+**Postman Koleksiyonu Ayarları**
+
+• ideaSoft Case.postman_collection.json dosyasını Postman’e aktarın.
+
+• Koleksiyon değişkenlerinden BASE_URL değerini API sunucunuzun URL’si ile değiştirin.
+
+---
+
+**Kimlik Doğrulama**
+
+
+
+**Kayıt Olma (Register)**
+
+
+
+POST {{BASE_URL}}/register
+
+
+```json
+{
+    "name": "Test",
+    "email": "test.user@example.com",
+    "password": "12345678"
+}
+```
+
+
+**Giriş Yapma (Login)**
+
+
+
+POST {{BASE_URL}}/login
+
+
+```json
+{
+    "email": "test.user@example.com",
+    "password": "12345678"
+}
+```
+
+
+**Dönen token**, Postman koleksiyonundaki **Auth** kısmına **Bearer Token** olarak eklenmelidir.
+
+---
+
+**CRUD İşlemleri**
+
+• **Customer (Müşteri)**
+
+• **Product (Ürün)**
+
+• **Product Category (Ürün Kategorisi)**
+
+• **Order (Sipariş)**
+
+
+
+Standart CRUD işlemleri için ilgili endpointler Postman koleksiyonunda bulunmaktadır.
+
+---
+
+**Sipariş (Order) Kuralları**
+
+• **Her bir OrderItem’ın adet ve birim fiyat çarpımı kendi total değerine eşit olmalı.**
+
+• **Tüm OrderItem’ların toplamı, Order toplamına eşit olmalı.**
+
+• **Her bir OrderItem için ilgili ürünün stoğu yeterli olmalı.**
+
+• **Tüm sipariş işlemleri veri tutarlılığı için veritabanı transaction ile korunmuştur.**
+
+
+
+Bu doküman, API’nin temel kullanımını açıklamaktadır. Daha fazla detay için proje kodlarını inceleyebilirsiniz.
+
+
+---
+---
+
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
